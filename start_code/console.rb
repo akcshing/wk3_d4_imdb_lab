@@ -30,12 +30,14 @@ casting3 = Casting.new({'movie_id' => movie2.id, 'star_id'=> star1.id, 'fee'=> 4
 casting4 = Casting.new({'movie_id' => movie2.id, 'star_id'=> star3.id, 'fee'=> 4_000_000})
 
 
-# casting1.save()
+casting1.save()
 casting2.save()
-# casting3.save()
-# casting4.save()
+casting3.save()
+casting4.save()
 
-
+p Star.all()
+p Movie.all()
+p Casting.all()
 
 binding.pry
 nil
